@@ -39,7 +39,7 @@ else
 @code {
     private Root? forecasts;
 
-    private string openWeatherKey = "6bffa8dec9dc4800d583b41bddcdf65a";
+    private string openWeatherKey = Environment.GetEnvironmentVariable("OPENWEATHERAPI_KEY");
 
     protected override async Task OnInitializedAsync()
     {
